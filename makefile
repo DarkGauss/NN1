@@ -2,11 +2,11 @@
 BIN=nn
 
 # what you want to name your tar/zip file:
-TARNAME=mat31C
+TARNAME=goes1944
 CXX=g++
 
-CXXFLAGS=-O3 -Wall   # optimize
-CXXFLAGS=-g -Wall    # debug
+##CXXFLAGS=-O3 -Wall   # optimize
+CXXFLAGS=-ggdb -Wall    # debug
 LIBS = -lm
 
 EXAMPLES=
