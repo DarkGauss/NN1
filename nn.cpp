@@ -7,21 +7,20 @@
 #include "rand.h"
 #include "mat.h"
 
-#define SLOPE 5
-
 using namespace std;
 
-//does stuff
-double transfer(double x)
+//Transfer function for nn
+double transferFunc(double x)
 {
-  return 1.0/(1.0+exp(-1*SLOPE*x));
+  double slope = 5.0;
+  return 1.0/(1.0 + exp(-slope*x));
 }
 
 
 int main()
 {
   //why? I don't know
-    initRand();
+    initRand(1,2);
 
     //read the number of features from the first row in the input
     int numFeatures;
@@ -69,7 +68,6 @@ int main()
       double eta = .1;
       Matrix delta = x.Tdot(t_copy.sub(yt)).scalarMul(eta);
       w.add(delta);
-
 
     }
 }

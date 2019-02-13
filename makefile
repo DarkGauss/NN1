@@ -1,5 +1,5 @@
 # Example makefile for using the mat libraries
-BIN=nn
+BIN=nn2
 
 # what you want to name your tar/zip file:
 TARNAME=goes1944
