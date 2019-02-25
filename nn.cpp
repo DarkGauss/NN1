@@ -102,13 +102,14 @@ int main()
     {
         for (int c = 1; c < tests.numCols(); c++)
         {
-            printf("%.2f ", tests.get(r, c));
+            printf("%.2f ", testsNoNorm.get(r, c));
         }
         for (int c = 0; c < testOutput.numCols(); c++)
-        {
+         {
             printf("%.2f ", testOutput.get(r, c));
         }
         printf("\n");
     }
+
     return 0;
 }
